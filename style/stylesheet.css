@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center; /* Centraliza todos os itens (horizontal e verticalmente) */
+    width: 100vw;
+    height: 100vh; /* Define a altura da página como a altura da tela */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 605px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #33A8DB;
+    background-image: url("./images/banner.png"); linear-gradient(rgba(0, 0, 0, 0.6), rgba(49, 168, 221, 0.2), rgba(0, 0, 0, 0.6)),
+    background-size: cover;
+    /* Faz a imagem cobrir toda a área */
+}
+
+
+.banner-content {
+    width: 780px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    /* Organiza o conteúdo verticalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo verticalmente */
+    align-items: center;
+    /* Centraliza o conteúdo horizontalmente */
+    gap: 16px;
+    background-color: transparent;
+
+}
+
+.logo {
+    width: 268px;
+    height: 268px;
+    left: 121px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: rgba(0, 0, 0, 0.5); /* Elipse com opacidade 0.5 */
+    border-radius: 50%; /* Cria uma elipse */
+    overflow: hidden; /* Garante que a imagem não ultrapasse as bordas da elipse */
+}
+
+.logo img {
+    width: 100%; /* Ajuste o tamanho da imagem dentro da elipse */
+    height: 100%;
+    padding: 10px 10px 10px 10px;
+    object-fit: contain; /* Faz com que a imagem se ajuste sem distorcer */
+    background-color: transparent;
+}
+
+.banner-content h1 {
+    width: 510px;
+    height: 46px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 46.96px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 35px;
+    /* Adiciona recuo em todas as linhas */
+
+}
+
+.banner-content p {
+
+    width: 610px;
+    height: 46px;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.48px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+    background-color: transparent;
+}
+
+button {
+
+    width: 334px;
+    height: 50px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    /* Espaçamento interno do botão */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Negrito */
+    color: #3BA1CD;
+    /* Cor do texto */
+    background-color: transparent;
+    /* Sem cor de fundo */
+    border: 2px solid transparent;
+    /* Define a borda inicial como transparente */
+    border-image-source: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
+    /* Gradiente da borda */
+    border-image-slice: 1;
+    /* Faz o gradiente preencher toda a borda */
+    cursor: pointer;
+    /* Altera o cursor para indicar que o botão é clicável */
+    transition: all 0.3s ease;
+    /* Transição suave ao interagir com o botão */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* Ajuste o valor conforme necessário */
+}
+
+
+button:hover {
+    background-color: #3BA1CD;
+    /* Altera a cor de fundo ao passar o mouse */
+    color: white;
+    /* Cor do texto ao passar o mouse */
+}
+
+
+#course-content {
+    width: 792px;
+    height: 330px;
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 38vw;
+    margin-top: 50px;
+}
+
+#course-content h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 46.96px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Adiciona recuo em todas as linhas */
+    margin-top: 100px;
+    margin-left: 50px;
+    letter-spacing: 2.5px;
+}
+
+#course-content p {
+    width: 780px;
+    height: 38px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20.78px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+    /* Cor do parágrafo */
+    text-align: center;
+    /* Justifica o texto */
+    margin-left:-150px ;
+    margin-top: 20px;
+
+}
+
+
+.modules-list {
+
+    width: 892px;
+    height: 325px;
+    margin-top: 20px;
+
+}
+
+
+.module {
+
+    width: 550px;
+    height: 53px;
+    padding: 16px 27px 14px 60px;
+    /* Espaço interno */
+    opacity: 1;
+    /* Define a opacidade entre 0 e 1 */
+    background: #252525;
+    /* Cor de fundo */
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 18.78px;
+    align-items: center;
+    border-radius: 25px;
+    /* Borda arredondada */
+    border: 2px solid #3BA1CD;
+    /* Borda azul de 10px */
+    margin-top: 20px;
+    letter-spacing: 0.05px;
+    /* Ajuste o valor conforme necessário */
+}
+
+
+.module span {
+    background: #252525;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:#3BA1CD
+    /* Cor diferenciada para o título */
+
+}
+
+
+#transform-world {
+    width: 100vw;
+    height: 560px;
+    margin-top: 130px;
+    background-image: url("./images/woman-code.png");
+    background-size: 100% 100%;
+    background-position: left;
+    background-attachment: fixed;
+    /* Fixa a imagem de fundo */
+    display: flex;
+    align-items: center;
+
+}
+
+#transform-world p {
+    width: 244px;
+    height: 141px;
+    gap: 0px;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 46.96px;
+    text-align: left;
+    text-underline-position: from-font;
+    margin-left: 198px;
+    text-transform: lowercase;
+    color: white;
+    /* Cor interna do texto em branco */
+    -webkit-text-stroke: 1px #33A8DB;
+    /* Define uma borda azul sólida ao redor das letras */
+    text-stroke: 1px #33A8DB;
+    /* Compatibilidade adicional */
+    background-color: transparent;
+    /* Torna o fundo do texto transparente */
+}
+
+
+#professional-challenges {
+    width: 100%;
+    height: 751px;
+    text-align: center;
+    /* Centraliza o conteúdo dentro da section */
+    padding: 40px 20px;
+    /* Espaço interno, 40px no topo e no fundo, 20px nas laterais */
+    background: black;
+    /* Fundo de exemplo (opcional) */
+
+}
+
+#professional-challenges h2 {
+    width: 850px;
+    height: 76px;
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    letter-spacing: 0.19em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    /* Espaço entre o título e o conteúdo abaixo */
+    margin-left: 550px;
+    color: #3BA1CD;
+
+}
+
+#professional-challenges img {
+    max-width: 100%;
+    /* Faz a imagem se ajustar ao tamanho do contêiner */
+    height: auto;
+    margin: 20px 0;
+    /* Espaço acima e abaixo da imagem */
+}
+
+#professional-challenges p {
+    width: 792px;
+    height: 76px;
+    top: 2154px;
+    left: 324px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: "Raleway ExtraBold"
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 20px 0;
+    /* Espaço entre o parágrafo e outros elementos */
+    color: white;
+    /* Cor do texto (pode ser ajustada) */
+    margin-left: 550px;
+}
+
+footer {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    /* Usando Flexbox para centralizar o conteúdo */
+    flex-direction: column;
+    /* Organiza os itens de cima para baixo */
+    justify-content: center;
+    /* Centraliza o conteúdo verticalmente */
+    align-items: center;
+    /* Centraliza o conteúdo horizontalmente */
+    padding: 20px;
+    /* Espaçamento interno */
+    border-top: 1px solid #33A8DB;
+    /* Borda superior azul */
+    background: linear-gradient(180deg, rgba(51, 168, 219, 0) 0%, rgba(51, 168, 219, 0.2) 99.99%, rgba(51, 168, 219, 0.2) 100%);
+    padding: 20px;
+    text-align: center;
+    /* Opcional, centraliza o texto */
+    color: white;
+    /* Opcional, para deixar o texto branco contra o fundo */
+}
+
+footer .dio-logo {
+    max-width: 200px;
+    /* Define o tamanho máximo para a logo */
+    height: auto;
+    /* Ajusta a altura proporcionalmente */
+    margin-bottom: 10px;
+    /* Espaço entre a imagem e o parágrafo */
+    background-color: transparent;
+    /* Torna o fundo do texto transparente */
+}
+
+footer p {
+    font-size: 16px;
+    color: white;
+    /* Cor do texto no parágrafo */
+    text-align: center;
+    /* Centraliza o texto */
+    background-color: transparent;
+    /* Torna o fundo do texto transparente */
+}
+
+footer a {
+    color: #33A8DB;
+    /* Cor do link */
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+    font-weight: bold;
+    background-color: transparent;
+    /* Torna o fundo do texto transparente */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    /* Sublinha o link ao passar o mouse */
+}
